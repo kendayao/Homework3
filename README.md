@@ -2,9 +2,9 @@
 
 Password Generator Project
 
-This project involved creating a random password generator application. This project used HTML, CSS, and Javscript languages. HTML and CSS was used to style the password generator website and Javascript was used to create the random password.
+This project involved creating a random password generator application. This project uses HTML, CSS, and Javscript languages. HTML and CSS was used to style the password generator website and Javascript was used to create the random password.
 
-Usage
+Usage:
 Click on Generate Password. This will display the following prompts:
 -Type in how many characters you want in your password. (character min 8 and character max 128).
 You must choose at least one of the following below in order for a password to be generated.

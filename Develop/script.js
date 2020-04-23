@@ -9,16 +9,19 @@ var specialChar = ["!","#","$","%","$","&","(",")","*","+","-","/",":",";","<","
 // Write password to the #password input
 function writePassword() {
 
+  // Character Count Prompt
   var characterCount = prompt("How many characters do you want in your password? (8-128 characters)")
 
+  // Checks if character count meets criteria
   if(characterCount > 7 && characterCount <129){
 
+  // Criteria Options
   var lowerCaseConfirm = confirm("Click OK if you want lower case letters?")
   var upperCaseConfirm = confirm ("Click OK if you want upper case letters?")
   var numericConfirm = confirm("Click OK if you want any numbers?")
   var specialConfirm = confirm("Click OK if you want any special characters?")
 
-
+    // Condtionals Based on Criteria Chosen. 
     var newPassword= ""
       function generatePassword() {
       if (lowerCaseConfirm===true && upperCaseConfirm===false && numericConfirm===false && specialConfirm===false){
@@ -99,12 +102,14 @@ function writePassword() {
         }
 
       }
+  // Call generatePassword Function
   generatePassword();
       
   var passwordText = document.querySelector("#password");
 
   passwordText.value = newPassword;
 
+  // If character count is not met, send this alert
   }else {
     alert("Oops! Please type a number between 7 and 129. Click OK to try again.")
   }
