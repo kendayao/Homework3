@@ -9,7 +9,8 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
 
-  var characterCount = prompt("How many characters do you want in your password? (8-128 characters")
+  var characterCount = prompt("How many characters do you want in your password? (8-128 characters)")
+  if(characterCount > 7 && characterCount <129){
   var lowerCaseConfirm = confirm("Click OK if want lower case letters?")
   var upperCaseConfirm = confirm ("Click OK if want upper case letters?")
   var numericConfirm = confirm("Click OK if you want any numbers?")
@@ -103,8 +104,12 @@ function writePassword() {
 
   passwordText.value = newPassword;
 
+  }else {
+    alert("Oops! Please type a number between 7 and 129. Click OK to try again.")
+  }
 }
 
+  
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
