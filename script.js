@@ -10,16 +10,16 @@ var specialChar = ["!","#","$","%","$","&","(",")","*","+","-","/",":",";","<","
 function writePassword() {
 
   // Character Count Prompt
-  var characterCount = prompt("How many characters do you want in your password? (8-128 characters)")
+  var characterCount = prompt("How many characters do you want in your password? (8 min and 128 max)")
 
   // Checks if character count meets criteria
   if(characterCount > 7 && characterCount <129){
 
   // Criteria Options
-  var lowerCaseConfirm = confirm("Click OK if you want lower case letters?")
-  var upperCaseConfirm = confirm ("Click OK if you want upper case letters?")
-  var numericConfirm = confirm("Click OK if you want any numbers?")
-  var specialConfirm = confirm("Click OK if you want any special characters?")
+  var lowerCaseConfirm = confirm("Click OK if you want lower case letters")
+  var upperCaseConfirm = confirm ("Click OK if you want upper case letters")
+  var numericConfirm = confirm("Click OK if you want any numbers")
+  var specialConfirm = confirm("Click OK if you want any special characters")
 
     // Condtionals Based on Criteria Chosen. 
     var newPassword= ""
