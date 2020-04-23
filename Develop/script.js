@@ -13,10 +13,10 @@ function writePassword() {
 
   if(characterCount > 7 && characterCount <129){
 
-  var lowerCaseConfirm = confirm("Click OK if want lower case letters?")
-  var upperCaseConfirm = confirm ("Click OK if want upper case letters?")
+  var lowerCaseConfirm = confirm("Click OK if you want lower case letters?")
+  var upperCaseConfirm = confirm ("Click OK if you want upper case letters?")
   var numericConfirm = confirm("Click OK if you want any numbers?")
-  var specialConfirm = confirm("Click OK you want any special characters?")
+  var specialConfirm = confirm("Click OK if you want any special characters?")
 
 
     var newPassword= ""
