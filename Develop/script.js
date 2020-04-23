@@ -29,7 +29,7 @@ function writePassword() {
            var characterPosition=Math.floor(Math.random()*(upperCase.length))
           newPassword += upperCase[characterPosition]
           }
-        }else if (lowerCaseConfirm===false && upperCaseConfirm===f && numericConfirm===true && specialConfirm===false){
+        }else if (lowerCaseConfirm===false && upperCaseConfirm===false && numericConfirm===true && specialConfirm===false){
           for (var i=0; i < characterCount; i++){
            var characterPosition=Math.floor(Math.random()*(numeric.length))
           newPassword += numeric[characterPosition]
@@ -59,7 +59,23 @@ function writePassword() {
            var characterPosition=Math.floor(Math.random()*(upperCase.length + lowerCase.length + numeric.length))
           newPassword += lowerCase.concat(upperCase,numeric)[characterPosition]
           }
+        }else if (lowerCaseConfirm===true && upperCaseConfirm===true && numericConfirm===false && specialConfirm===true){
+          for (var i=0; i < characterCount; i++){
+           var characterPosition=Math.floor(Math.random()*(upperCase.length + lowerCase.length + specialChar.length))
+          newPassword += lowerCase.concat(upperCase,specialChar)[characterPosition]
+          }
+        }else if (lowerCaseConfirm===false && upperCaseConfirm===true && numericConfirm===true && specialConfirm===false){
+          for (var i=0; i < characterCount; i++){
+           var characterPosition=Math.floor(Math.random()*(upperCase.length + numeric.length))
+          newPassword += upperCase.concat(numeric)[characterPosition]
+          }
+        }else if (lowerCaseConfirm===false && upperCaseConfirm===true && numericConfirm===false && specialConfirm===true){
+          for (var i=0; i < characterCount; i++){
+           var characterPosition=Math.floor(Math.random()*(upperCase.length + specialChar.length))
+          newPassword += upperCase.concat(specialChar)[characterPosition]
+          }
         }
+
       
 
 
