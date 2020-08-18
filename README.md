@@ -3,12 +3,13 @@
 
 ## Description
 
-This project involved creating a random password generator application. This project uses HTML, CSS, and Javscript languages. HTML and CSS was used to style the password generator website and Javascript was used to create the random password.
+Password Generator is a web application that generates passwords based on user preferences. 
 
 
 ## Table of Contents
 
 * [Description](#description)
+* [Technology](#technology)
 * [User Story](#user-story)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -18,7 +19,10 @@ This project involved creating a random password generator application. This pro
 * [Questions](#questions)
 * [Deployed Application URL](#deployed-application-URL)
 
-
+## Technology
+- HTML
+- CSS
+- JavaScript
 
 ## User Story
 
@@ -69,6 +73,7 @@ For any questions, please contact kendayao at kendayao@gmail.com
 ## Deployed Application URL
 
 Link to deployed application: https://kendayao.github.io/Password-Generator/
+
 
 <img src="images/pwgenerator.png" width="300" height="200">
 
